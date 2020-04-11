@@ -12,10 +12,13 @@ public class Ball : MonoBehaviour
     [SerializeField] AudioClip[] BallSounds;
     [SerializeField] float randomFactorOfVelocityTweark = 0.2f;
     [SerializeField] float FactorAttacment = 1;
+    [SerializeField] GameObject visualEffectBallDestroy;
+    [SerializeField] int timeOfEffectDisplay = 500;
+    [SerializeField] AudioClip breakSound;
 
     //states
     Vector2 paddleToBallDis;
-    bool hasStarted = false;
+    public bool hasStarted { get; private set; }
 
     //cached component refrences
     AudioSource myAudioSource;
@@ -80,5 +83,23 @@ public class Ball : MonoBehaviour
             float newBallXVelocity = oldBallXVelocity + FactorAttacment * paddleXVelocity;
             thisRigidBody2D.velocity = new Vector2(newBallXVelocity, ballYVelocity);
         }
+    }
+
+    public void DestoryBall()
+    {
+        TriggerVisualEffect();
+        GetComponent<SpriteRenderer>().enabled = false;
+        PlayBallDestroySound();
+    }
+
+    private void PlayBallDestroySound()
+    {
+        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
+    }
+
+    private void TriggerVisualEffect()
+    {
+        GameObject sparkles = Instantiate(visualEffectBallDestroy, transform.position, transform.rotation);
+        Destroy(sparkles, timeOfEffectDisplay);
     }
 }

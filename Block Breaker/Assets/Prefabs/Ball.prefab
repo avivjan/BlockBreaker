@@ -142,6 +142,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a432abdbbecdebc439b0d737c81260b1, type: 3}
   randomFactorOfVelocityTweark: 0.2
   FactorAttacment: 1
+  visualEffectBallDestroy: {fileID: 100000, guid: 7d846c02296ef4dc4abff04ce3e5262c,
+    type: 3}
+  timeOfEffectDisplay: 500
+  breakSound: {fileID: 8300000, guid: 9aff697e62060274a814a05c1d866e5b, type: 3}
 --- !u!82 &404846718412804286
 AudioSource:
   m_ObjectHideFlags: 0
