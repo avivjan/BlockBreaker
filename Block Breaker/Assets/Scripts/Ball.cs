@@ -88,8 +88,8 @@ public class Ball : MonoBehaviour
     public void DestoryBall()
     {
         TriggerVisualEffect();
-        GetComponent<SpriteRenderer>().enabled = false;
         PlayBallDestroySound();
+        gameObject.SetActive(false);
     }
 
     private void PlayBallDestroySound()

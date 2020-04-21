@@ -8,6 +8,11 @@ public class BloonActivator : MonoBehaviour
     [SerializeField] BlackBaloon blackBallon;
     [SerializeField] Ball ball;
 
+    private const float MAX_X_POS = 15.5f;
+    private const float MIN_X_POS = 0;
+    private const float MIN_Y_POS = 0;
+    private const float MAX_Y_POS= 11.5f;
+
     //States
     private bool WereActivated = false;
 
@@ -22,8 +27,8 @@ public class BloonActivator : MonoBehaviour
     {
         if (ball.hasStarted && !WereActivated)
         {
-            Instantiate<WhiteBaloon>(whiteBallon, new Vector3(Random.Range(0,16), Random.Range(0,16),0),Quaternion.identity);
-            Instantiate<BlackBaloon>(blackBallon, new Vector3(Random.Range(0,16), Random.Range(0,16),0),Quaternion.identity);
+            Instantiate<WhiteBaloon>(whiteBallon, new Vector3(Random.Range(MIN_X_POS, MAX_X_POS), Random.Range(MIN_Y_POS, MAX_Y_POS),0),Quaternion.identity);
+            Instantiate<BlackBaloon>(blackBallon, new Vector3(Random.Range(MIN_X_POS, MAX_X_POS), Random.Range(MIN_Y_POS, MAX_Y_POS), 0), Quaternion.identity);
             WereActivated = true;
         }
     }

@@ -33,6 +33,4 @@ public class BlackBaloon : MonoBehaviour
             SceneManager.LoadScene("Game Over");
         }
     }
-
-    
 }

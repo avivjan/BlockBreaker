@@ -317,6 +317,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4816975764160441824, guid: 07e4f8a33af2c0f4f9b4da5687e596d4,
+        type: 3}
+      propertyPath: autoPlaying
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07e4f8a33af2c0f4f9b4da5687e596d4, type: 3}
 --- !u!4 &227566285 stripped
@@ -1018,6 +1023,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 404846718412804274, guid: c3d3b2011bf0eca419630ce4f8297de1,
+        type: 3}
+      propertyPath: paddle
+      value: 
+      objectReference: {fileID: 1991170987}
     - target: {fileID: 404846718412804273, guid: c3d3b2011bf0eca419630ce4f8297de1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1073,11 +1083,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 404846718412804274, guid: c3d3b2011bf0eca419630ce4f8297de1,
-        type: 3}
-      propertyPath: paddle
-      value: 
-      objectReference: {fileID: 1991170987}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3d3b2011bf0eca419630ce4f8297de1, type: 3}
 --- !u!1001 &1192192382
@@ -1276,6 +1281,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1245951836}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1283724343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3271351065362267533, guid: f70417dc0369b84448f69419cc4c9f35,
+    type: 3}
+  m_PrefabInstance: {fileID: 1778813264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1283724344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283724343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d9d007552513e409b8d048d8889c88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1438471876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1515,21 +1538,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3271351065362267522, guid: f70417dc0369b84448f69419cc4c9f35,
         type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271351065362267522, guid: f70417dc0369b84448f69419cc4c9f35,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271351065362267522, guid: f70417dc0369b84448f69419cc4c9f35,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -100
-      objectReference: {fileID: 0}
-    - target: {fileID: 3271351065362267522, guid: f70417dc0369b84448f69419cc4c9f35,
-        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -1566,6 +1574,26 @@ PrefabInstance:
     - target: {fileID: 3271351065362267522, guid: f70417dc0369b84448f69419cc4c9f35,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271351065362267523, guid: f70417dc0369b84448f69419cc4c9f35,
+        type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271351065362267523, guid: f70417dc0369b84448f69419cc4c9f35,
+        type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271351065362267523, guid: f70417dc0369b84448f69419cc4c9f35,
+        type: 3}
+      propertyPath: orthographic size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3271351065362267523, guid: f70417dc0369b84448f69419cc4c9f35,
+        type: 3}
+      propertyPath: m_TargetDisplay
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
