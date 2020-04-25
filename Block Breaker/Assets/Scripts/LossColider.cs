@@ -9,6 +9,7 @@ public class LossColider : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Ball"))
         {
+            collision.gameObject.SetActive(false);
             SceneManager.LoadScene("Game Over");
         }
     }

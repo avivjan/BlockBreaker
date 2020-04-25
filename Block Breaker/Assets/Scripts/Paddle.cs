@@ -23,7 +23,14 @@ public class Paddle : MonoBehaviour
     void Update()
     {
         float oldXPos = transform.position.x;
-        transform.position = new Vector2(GetNewPaddleXPos(), transform.position.y);
+        if (tag == "Second Paddle")
+        {
+            transform.position = new Vector2(GetNewPaddleXPos() + ScreenWidthInUnits, transform.position.y);
+        }
+        else
+        {
+            transform.position = new Vector2(GetNewPaddleXPos(), transform.position.y);
+        }
         float newPos = transform.position.x;
         velocity = newPos - oldXPos;
     }
