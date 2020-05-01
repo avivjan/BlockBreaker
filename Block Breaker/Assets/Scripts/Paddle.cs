@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Paddle : MonoBehaviour
@@ -8,7 +10,8 @@ public class Paddle : MonoBehaviour
     [SerializeField] float ScreenWidthInUnits = 16f;
     [SerializeField] float MinXPos = 1f;
     [SerializeField] float MaxXPos = 15f;
-    [SerializeField] public float velocity;
+    public float velocity;
+    
 
     //cached refferences
     GameSession gameSession;
@@ -41,7 +44,7 @@ public class Paddle : MonoBehaviour
         {
             return Mathf.Clamp(ball.transform.position.x, MinXPos, MaxXPos);
         }
-        float mouseXPosInUnits = Input.mousePosition.x / Screen.width * ScreenWidthInUnits;
-        return Mathf.Clamp(mouseXPosInUnits, MinXPos, MaxXPos);
+        var newXPos = transform.position.x + (Input.GetAxis("Mouse X") * Time.deltaTime);
+        return Mathf.Clamp(newXPos, MinXPos, MaxXPos);
     }
 }

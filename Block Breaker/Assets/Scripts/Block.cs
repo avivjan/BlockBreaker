@@ -12,7 +12,7 @@ public class Block : MonoBehaviour
     [SerializeField] GameObject visualEffect;
     [SerializeField] int timeOfEffectDisplay = 500;
     [SerializeField] Sprite[] hitsSprites;
-    [SerializeField] int scoreForBreak;
+    private int scoreForBreak;
 
     //cached references
     Level level;
