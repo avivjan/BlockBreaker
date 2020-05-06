@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/אביב/Desktop/My Games/Block Breaker.exe
+C:/Users/אביב/Desktop/Unity 2D/Block Breaker Full Version Game/Block Breaker.exe
 SceneListBegin?
 Assets/Scenes/Start Menu.unity
 Assets/Scenes/Level 1.unity
@@ -163,7 +163,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 621fe6a7bc704d7ceac712f2773c67a0 Assembly-CSharp.dll:.BloonActivator
-25c1ba1fd185637976a5b780d945fe7f Assembly-CSharp.dll:.Block
+52823a921076f76ce6eb71675cd60582 Assembly-CSharp.dll:.Block
 3b760e6526e13f7504f59e210145899a Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 507174d46dacbc5fe45e28485db5dd1e Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
